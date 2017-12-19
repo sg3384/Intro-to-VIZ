@@ -1,2 +1,2 @@
-# intro-to-viz
+# Intro-to-VIZ
 Introduction to Visualization
