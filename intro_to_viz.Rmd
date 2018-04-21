@@ -4,14 +4,14 @@ author: "Charles Lang"
 date: "October 3, 2016"
 output: html_document
 ---
-#Input
+## Input
 ```{r}
 D1 <- read.csv("School_Demographics_and_Accountability_Snapshot_2006-2012.csv", header = TRUE, sep = ",")
 
 D2 <- subset(D1, schoolyear == 20112012)
 ```
 
-#Histograms
+## Histograms
 ```{r}
 hist()
 
@@ -22,7 +22,7 @@ hist(D2$frl_percent, breaks = c(0,10,20,80,100))
 hist(D2$frl_percent, breaks = 100, ylim = c(0,30))
 ```
 
-#Plots
+## Plots
 ```{r}
 plot(D2$ell_num, D2$ctt_num)
 
@@ -46,7 +46,7 @@ D5 <- subset(D1, DBN == "31R075")
 D5 <- droplevels(D5)
 boxplot(D5$total_enrollment ~ D5$Name)
 ```
-#Pairs
+## Pairs
 ```{r}
 D4 <- D2[,c(5,6, 21:24)]
 
